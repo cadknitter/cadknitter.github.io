@@ -372,13 +372,20 @@ function createSampleCarousel() {
     carousel.appendChild(item);
   });
   
-  // Initialize all viewers
+  // Initialize all viewers (with error handling)
   SAMPLES.forEach(function(sample, index) {
     var viewerContainer = document.getElementById('viewer-' + sample.id);
     if (viewerContainer) {
-      var viewer = initSampleViewer(viewerContainer, sample);
-      sampleViewers.push(viewer);
-      startViewer(viewer);
+      try {
+        var viewer = initSampleViewer(viewerContainer, sample);
+        if (viewer) {
+          sampleViewers.push(viewer);
+          startViewer(viewer);
+        }
+      } catch (e) {
+        console.error('Failed to initialize viewer for', sample.id, e);
+        viewerContainer.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#999;font-size:12px;">3D viewer unavailable</div>';
+      }
     }
   });
   
