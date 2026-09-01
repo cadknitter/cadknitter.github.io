@@ -82,10 +82,14 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>FPT Software AI Center,</span>
+            <span class="author-block"><sup>1</sup>FPT Corporation,</span>
             <span class="author-block"><sup>2</sup>MBZUAI,</span>
             <span class="author-block"><sup>3</sup>University of Liverpool,</span>
-            <span class="author-block"><sup>4</sup>University of Tokyo</span>
+            <span class="author-block"><sup>4</sup>Keio University</span>
+          </div>
+
+          <div class="is-size-4 publication-venue">
+            <span class="venue-badge">SIGGRAPH Asia 2026 Conference</span>
           </div>
 
           <div class="column has-text-centered">
@@ -128,6 +132,17 @@
   </div>
 </section>
 
+<!-- Teaser Video. -->
+<section class="section teaser-video-section">
+  <div class="container is-max-desktop">
+    <video class="teaser-video" controls playsinline autoplay muted loop poster="./static/images/teaser.png">
+      <source src="./static/videos/teaser-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+<!--/ Teaser Video. -->
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -136,17 +151,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Crafting computer-aided design (CAD) models has long been a painstaking and time-intensive task, 
-            demanding both precision and expertise from designers. 
-            With the emergence of 3D generation, this task has undergone a transformative impact, shifting not only from visual 
-            fidelity to functional utility but also enabling editable CAD designs. Prior works have achieved early success 
-            in single-part CAD generation, which is not well-suited for real-world applications, as multiple parts need to 
-            be assembled under semantic and geometric constraints. In this paper, we propose <i>CADKnitter</i>, a compositional 
-            CAD generation framework with a geometry-guided diffusion sampling strategy. <i>CADKnitter</i> is able to generate 
-            a complementary CAD part that follows both the geometric constraints of the given CAD model and the semantic 
-            constraints of the desired design text prompt. We also curate a dataset, so-called <i>KnitCAD</i>, containing 
-            over 310,000 samples of CAD models, along with textual prompts and assembly metadata that provide semantic 
-            and geometric constraints. Intensive experiments demonstrate that our proposed method outperforms other state-of-the-art baselines by a clear margin.
+            Computer-aided design (CAD) defines 3D models as compact, precise, and editable representations, making it directly useful for several fields. Recently, CAD generation has been gaining more attention in both the research community and industry. Crafting CAD models has long been a painstaking and time-intensive task, demanding both precision and expertise from designers. Prior works have achieved early success in single-part CAD generation, which is not well-suited for real-world applications, as multiple parts need to be assembled under semantic constraints and geometric compatibility. In this paper, we propose CADKnitter, a compositional CAD generation framework with geometric-guiding cues to steer diffusion sampling. CADKnitter is able to generate a complementary CAD part that follows both the geometric constraints of the given CAD model and the semantic constraints of the desired design text prompt. We also curate a dataset, so-called KnitCAD, containing over 310,000 samples of CAD models, along with textual prompts and assembly metadata that provide semantic and geometric constraints. Intensive experiments demonstrate that our proposed method outperforms other state-of-the-art baselines by a clear margin.
           </p>
         </div>
       </div>
@@ -212,11 +217,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{le2025cadknitter,
+    <pre><code>@inproceedings{le2026cadknitter,
   author    = {Le, Tri and Nguyen, Khang and Huang, Baoru and Ta, Tung D and Nguyen, Anh},
   title     = {CADKnitter: Compositional CAD Generation from Text and Geometry Guidance},
-  journal   = {arXiv preprint arXiv:2512.11199},
-  year      = {2025},
+  booktitle = {SIGGRAPH Asia 2026 Conference Papers},
+  year      = {2026},
 }</code></pre>
   </div>
 </section>

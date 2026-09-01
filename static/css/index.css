@@ -358,3 +358,34 @@ body {
     height: 180px;
   }
 }
+
+.publication-venue {
+  width: auto;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue .venue-badge {
+  display: inline-block;
+  padding: 0.35em 1em;
+  border-radius: 999px;
+  background-color: #f0f4ff;
+  color: #3273dc;
+  border: 1px solid #cddcff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.teaser-video-section {
+  padding-top: 0;
+}
+
+.teaser-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #000;
+}
