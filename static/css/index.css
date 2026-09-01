@@ -359,14 +359,13 @@ body {
   }
 }
 
-.publication-venue {
-  width: auto;
+.venue-line {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.publication-venue .venue-badge {
+.venue-badge {
   display: inline-block;
   padding: 0.35em 1em;
   border-radius: 999px;
